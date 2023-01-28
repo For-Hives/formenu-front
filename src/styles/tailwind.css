@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
+
+body {
+  background: rgb(248,250,252);
+  background: -moz-linear-gradient(-45deg, rgba(248,250,252,1) 0%, rgba(224,231,255,1) 15%, rgba(248,250,252,1) 40%, rgba(224,231,255,1) 85%, rgba(248,250,252,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(248,250,252,1) 0%, rgba(224,231,255,1) 15%, rgba(248,250,252,1) 40%, rgba(224,231,255,1) 85%, rgba(248,250,252,1) 100%);
+  background: linear-gradient(-45deg, rgba(248,250,252,1) 0%, rgba(224,231,255,1) 15%, rgba(248,250,252,1) 40%, rgba(224,231,255,1) 85%, rgba(248,250,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fafc",endColorstr="#f8fafc",GradientType=1);
+}
