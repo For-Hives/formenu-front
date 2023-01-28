@@ -116,7 +116,7 @@ export function Pricing() {
                 <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
                     <Plan
                         name="Commis"
-                        price="19.99€"
+                        price="39.99€"
                         description="Pour les petits restaurants familiaux."
                         href="mailto:contact@formenu.fr"
                         features={[
@@ -132,7 +132,7 @@ export function Pricing() {
                     <Plan
                         featured
                         name="Second"
-                        price="49.99€"
+                        price="59.99€"
                         description="Pour les restaurants qui veulent grandir."
                         href="mailto:contact@formenu.fr"
                         features={[
