@@ -7,7 +7,7 @@ const faqs = [
     {
       question: 'Et si mes clients ne veulent pas utiliser l’application ?',
       answer:
-        'Aucun souci, vous avez la possibilité de proposer un menu papier à vos clients. L\'application vous permet' +
+        'Aucun souci, vous avez la possibilité de proposer un menu papier à vos clients. L\'application vous permet ' +
           'd\'imprimer vos menus en un clic !',
     },
     {

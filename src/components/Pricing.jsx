@@ -50,8 +50,8 @@ function Plan({name, price, description, href, features, featured = false}) {
     return (
         <section
             className={clsx(
-                'flex flex-col rounded-3xl px-6 sm:px-8',
-                featured ? 'order-first bg-formenu-indigo-600 py-8 lg:order-none' : 'lg:py-8'
+                'flex flex-col rounded-3xl px-6 sm:px-8 py-8',
+                featured ? ' bg-formenu-indigo-600 py-8 lg:order-none' : 'lg:py-8 border border-2 border-formenu-indigo-600 lg:bg-transparent'
             )}
         >
             <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -84,7 +84,7 @@ function Plan({name, price, description, href, features, featured = false}) {
                 href={href}
                 variant={featured ? 'solid' : 'outline'}
                 color="white"
-                className="mt-8"
+                className="mt-8 bg-formenu-indigo-600"
                 aria-label={`Get started with the ${name} plan for ${price}`}
             >
                 {"ça m'intéresse !"}
@@ -113,7 +113,7 @@ export function Pricing() {
                         Peu importe votre taille, nous avons un plan adapté à vos besoins.
                     </p>
                 </div>
-                <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+                <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
                     <Plan
                         name="Commis"
                         price="39.99€"
