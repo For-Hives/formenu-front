@@ -19,7 +19,7 @@ export function CallToAction() {
             <br/>
             Pourquoi ne pas commencer par vos menus ?
           </p>
-          <Button href="mailto:contact@formenu.com" color="white" className="mt-10">
+          <Button href="mailto:contact@formenu.fr" color="white" className="mt-10">
             Je veux en savoir plus !
           </Button>
         </div>

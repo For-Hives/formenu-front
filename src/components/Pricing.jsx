@@ -118,7 +118,7 @@ export function Pricing() {
                         name="Commis"
                         price="19.99€"
                         description="Pour les petits restaurants familiaux."
-                        href="mailto:contact@formenu.com"
+                        href="mailto:contact@formenu.fr"
                         features={[
                             'Créations de 3 menus',
                             'Customisation partielle avec les thèmes par défaut',
@@ -134,7 +134,7 @@ export function Pricing() {
                         name="Second"
                         price="49.99€"
                         description="Pour les restaurants qui veulent grandir."
-                        href="mailto:contact@formenu.com"
+                        href="mailto:contact@formenu.fr"
                         features={[
                             'Tout ce qu\'il y a dans le plan Commis',
                             'Création de 10 menus',
@@ -147,7 +147,7 @@ export function Pricing() {
                         name="Chef"
                         price="99.99€"
                         description="Pour ceux qui veulent conquérir le monde."
-                        href="mailto:contact@formenu.com"
+                        href="mailto:contact@formenu.fr"
                         features={[
                             'Tout ce qu\'il y a dans le plan Second',
                             'Création illimitée de menus',

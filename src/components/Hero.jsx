@@ -43,8 +43,8 @@ export function Hero() {
                         </p>
                     </div>
                     <div className="mt-10 flex justify-start gap-x-6">
-                        <Button href="mailto:contact@formenu.com">Je veux une demo</Button>
-                        <Button href="mailto:contact@formenu.com" variant="outline">Comment ça fonctionne ?</Button>
+                        <Button href="mailto:contact@formenu.fr">Je veux une demo</Button>
+                        <Button href="mailto:contact@formenu.fr" variant="outline">Comment ça fonctionne ?</Button>
                     </div>
                 </div>
             </div>
