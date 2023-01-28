@@ -51,7 +51,7 @@ function Plan({name, price, description, href, features, featured = false}) {
         <section
             className={clsx(
                 'flex flex-col rounded-3xl px-6 sm:px-8 py-8',
-                featured ? ' bg-formenu-indigo-600 py-8 lg:order-none' : 'lg:py-8 border border-2 border-formenu-indigo-600 lg:bg-transparent'
+                featured ? ' bg-formenu-indigo-600 py-8 lg:order-none' : 'lg:py-8 border border-2 border-formenu-indigo-600 lg:border-none lg:bg-transparent'
             )}
         >
             <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -84,7 +84,7 @@ function Plan({name, price, description, href, features, featured = false}) {
                 href={href}
                 variant={featured ? 'solid' : 'outline'}
                 color="white"
-                className="mt-8 bg-formenu-indigo-600"
+                className={"mt-8" + ( featured ? "" : " bg-formenu-indigo-600 lg:bg-transparent")}
                 aria-label={`Get started with the ${name} plan for ${price}`}
             >
                 {"ça m'intéresse !"}
