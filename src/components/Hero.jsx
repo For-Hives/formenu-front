@@ -38,6 +38,7 @@ export function Hero() {
                         </p>
                         <p className="text-left mx-auto max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
                             Cette application est faite pour vous&nbsp;!
+                            <br/>
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
                             L'expérience utilisateur est au cœur de votre application&nbsp;!
                         </p>

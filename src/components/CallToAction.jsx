@@ -7,7 +7,7 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-formenu-indigo-600 py-32"
+      className="relative overflow-hidden bg-formenu-indigo-600 pt-16 pb-32"
     >
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
