@@ -1,65 +1,64 @@
-import Image from 'next/image'
-
 import { Container } from '@/components/Container'
 
 const faqs = [
   [
     {
-      question: 'Et si mes clients ne veulent pas utiliser l’application ?',
+      question: 'Et si mes clients ne veulent pas utiliser l’application\u00A0?',
       answer:
         'Aucun souci, vous avez la possibilité de proposer un menu papier à vos clients. L\'application vous permet ' +
-          'd\'imprimer vos menus en un clic !',
+          'd\'imprimer vos menus en un clic\u00A0!',
     },
     {
-      question: 'Oui, mais comment je fais pour garder l\'âme de mon restaurant ? Mon identité visuelle ?',
+      question: 'Oui, mais comment je fais pour garder l\'âme de mon restaurant\u00A0? Mon identité visuelle\u00A0?',
       answer: 'Tout a été pensé pour que vous puissiez garder votre identité visuelle. Vous pouvez choisir' +
           'de personnaliser votre menu à votre guise'
     },
     {
-      question: 'Et si je n\'ai aucune compétence pour utiliser mon identité visuelle ? mes couleurs etc ?',
+      question: 'Et si je n\'ai aucune compétence pour utiliser mon identité visuelle\u00A0? mes couleurs etc\u00A0?',
       answer:
-        'Notre support sera là pour vous accompagner, vous ne serez pas seul ! loin de là !',
+        'Notre support sera là pour vous accompagner, vous ne serez pas seul\u00A0! loin de là\u00A0!',
     },
   ],
   [
     {
-      question: 'Légal ? Vous parlez de l\'obligation de mentionner les allergènes ?',
+      question: 'Légal\u00A0? Vous parlez de l\'obligation de mentionner les allergènes\u00A0?',
       answer:
-        'Et oui ! en effet, la loi vous oblige à afficher les allergènes sur vos menus. depuis le décret n°2015-447 du 17 avril 2015 '
-      + 'les restaurateurs sont tenus d’indiquer les allergènes sur leurs menus. ForMenu vous permet de le faire facilement !',
+        'Et oui\u00A0! En effet, la loi vous oblige à afficher les allergènes sur vos menus. depuis le décret n°2015-447 du 17 avril 2015 '
+      + 'les restaurateurs sont tenus d’indiquer les allergènes sur leurs menus. ForMenu vous permet de le faire facilement\u00A0!',
     },
     {
       question:
-        'Votre application est disponible sur téléphone, tablette et ordinateur ?',
+        'Votre application est disponible sur téléphone, tablette et ordinateur\u00A0?',
       answer:
-        'Oui, vous pouvez utiliser ForMenu sur tous vos appareils ! ForMenu est responsive et s\'adapte à tous les écrans !',
+        'Oui, vous pouvez utiliser ForMenu sur tous vos appareils\u00A0! ForMenu est responsive et s\'adapte à tous les écrans\u00A0!',
     },
     {
       question:
-        'ForMenu est utilisable partout ?',
+        'ForMenu est utilisable partout\u00A0?',
       answer:
-        'Oui, peu importe où vous êtes, vous pouvez utiliser ForMenu ! Que ce soit en France, en Belgique, en Suisse ou ailleurs !',
+        'Oui, peu importe où vous êtes, vous pouvez utiliser ForMenu\u00A0! Que ce soit en France, en Belgique, en Suisse ou ailleurs\u00A0!',
     },
   ],
   [
     {
-      question: 'Qu\'est-ce-que ça m\'apporte ?',
+      question: 'Qu\'est-ce-que ça m\'apporte\u00A0?',
       answer:
-        'La possibilité de proposer une expérience unique à vos clients ! De gagner du temps, et donc de l\'argent, et avoir une visibilité sur vos ventes !',
+        'La possibilité de proposer une expérience unique à vos clients\u00A0! De gagner du temps, et donc de l\'argent, et avoir une visibilité sur vos ventes\u00A0!',
     },
     {
-      question: 'Sur mes ventes ?',
-      answer: 'Et oui, en effet, il vous sera possible de savoir quels sont vos plats les plus vus, les plus commandés !',
+      question: 'Sur mes ventes\u00A0?',
+      answer: 'Et oui, en effet, il vous sera possible de savoir quels sont vos plats les plus vus, les plus commandés\u00A0!',
     },
     {
-      question: 'Et si il manque une fonctionnalité qui me serait utile ?',
+      question: 'Et si il manque une fonctionnalité qui me serait utile\u00A0?',
       answer:
-        'Nous sommes à votre écoute, n\'hésitez pas à nous contacter pour nous faire part de vos idées ! Nous les étudierons avec attention !',
+        'Nous sommes à votre écoute, n\'hésitez pas à nous contacter pour nous faire part de vos idées\u00A0! Nous les étudierons avec attention\u00A0!',
     },
     {
-        question: 'Et en termes de RGPD ?',
-        answer: 'Toutes les données sont stockées sur nos serveurs, et ne sont pas transmises à des tiers. Vous pouvez à tout moment supprimer vos données. ' +
-            'En plus de cela, aucune donnée personnelle n\'est stockée'
+        question: 'Et en termes de RGPD\u00A0?',
+        answer: 'Toutes les données sont stockées sur nos serveurs, et ne sont pas transmises à des tiers. ' +
+            'Vous pouvez à tout moment supprimer vos données ou demander à les récupérés. ' +
+            'Les données sont hébergées sur des serveurs en Europe.'
     }
   ],
 ]
@@ -80,7 +79,7 @@ export function Faqs() {
             Les questions les plus fréquentes
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Si la question que vous vous posez {"n'est"} pas dans la liste, {"n'hésitez"} pas à nous contacter !
+            Si la question que vous vous posez {"n'est"} pas dans la liste, {"n'hésitez"} pas à nous contacter&nbsp;!
           </p>
         </div>
         <ul
