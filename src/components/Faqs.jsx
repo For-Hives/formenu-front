@@ -56,9 +56,8 @@ const faqs = [
     },
     {
         question: 'Et en termes de RGPD\u00A0?',
-        answer: 'Toutes les données sont stockées sur nos serveurs, et ne sont pas transmises à des tiers. ' +
-            'Vous pouvez à tout moment supprimer vos données ou demander à les récupérés. ' +
-            'Les données sont hébergées sur des serveurs en Europe.'
+        answer: 'Toutes les données sont stockées sur des serveurs en Europe, et ne sont pas transmises à des tiers. ' +
+            'Vous pouvez à tout moment supprimer vos données ou demander à les récupérer.'
     }
   ],
 ]
