@@ -22,3 +22,14 @@ To learn more about the technologies used in this site template, see the followi
 - [Next.js](https://nextjs.org/docs) - the official Next.js documentation
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 
+## Deploy on VPS
+cd /var/www/ForMenu
+sudo git pull
+sudo npm install
+sudo npm run build
+
+sudo pm2 list
+sudo pm2 stop 0
+sudo pm2 delete 0
+( or the number of the process corresponding to the app (replace 0 for the correct id) )
+sudo pm2 start npm --name "ForMenu" -- start
