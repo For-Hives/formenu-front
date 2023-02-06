@@ -12,22 +12,6 @@ export default function Home() {
     return (
         <>
             <Head>
-                {/*Google tag (gtag.js)*/}
-                <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-H4F4P89MJ8"/>
-                <Script
-                    id='google-analytics'
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                   window.dataLayer = window.dataLayer || [];
-                   function gtag(){dataLayer.push(arguments);}
-                   gtag('js', new Date());
-                   gtag('config', 'G-H4F4P89MJ8');
-              `,
-                    }}
-                />
-
-
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <title>Le menu connecté et sur-mesure !</title>
                 <meta
