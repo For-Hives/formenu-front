@@ -11,7 +11,7 @@ const faqs = [
     {
       question: 'Oui, mais comment je fais pour garder l\'âme de mon restaurant\u00A0? Mon identité visuelle\u00A0?',
       answer: 'Tout a été pensé pour que vous puissiez garder votre identité visuelle. Vous pouvez choisir' +
-          'de personnaliser votre menu à votre guise'
+          ' de personnaliser votre menu à votre guise'
     },
     {
       question: 'Et si je n\'ai aucune compétence pour utiliser mon identité visuelle\u00A0? mes couleurs etc\u00A0?',
