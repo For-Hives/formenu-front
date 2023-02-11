@@ -1,0 +1,6 @@
+.idea
+node_modules
+.next
+.gitignore
+package-lock.json
+README.md
