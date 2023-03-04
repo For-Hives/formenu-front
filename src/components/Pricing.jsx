@@ -98,25 +98,25 @@ export function Pricing() {
             <div className="mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
                 <Plan
                     name="Commis"
-                    price="39.99€"
+                    price="59.99€"
                     description="Pour les petits restaurants familiaux."
                     href="mailto:contact@formenu.fr"
-                    features={['Créations de 3 menus', 'Customisation partielle avec les thèmes par défaut', 'Export imprimable des menus', 'Désactivation des plats, et ingrédient à la volée', 'Le client à accès au tri, recherche, et filtre des plats', 'Le client peut voir les ingrédients des plats', 'Le client peut voir les allergènes des plats',]}
+                    features={['Créations de 3 menus personnalisés', 'Customisation partielle avec les thèmes par défaut', 'Export imprimable des menus', 'Désactivation des plats, et ingrédient à la volée', 'Le client à accès au tri, recherche, et filtre des plats', 'Le client peut voir les ingrédients des plats', 'Le client peut voir les allergènes des plats',]}
                 />
                 <Plan
                     featured
                     name="Second"
-                    price="59.99€"
+                    price="99.99€"
                     description="Pour les restaurants qui veulent grandir."
                     href="mailto:contact@formenu.fr"
-                    features={['Tout ce qu\'il y a dans le plan Commis', 'Création de 10 menus', 'Customisation complète avec les thèmes par défaut', 'Système de popularité sur vos plats (orientation des commandes clients)', 'Aide à la mise en place de votre carte',]}
+                    features={['Tout ce qu\'il y a dans le plan Commis', 'Création de 10 menus personnalisés', 'Customisation complète avec les thèmes par défaut', 'Système de popularité sur vos plats (orientation des commandes clients)', 'Aide à la mise en place de votre carte',]}
                 />
                 <Plan
                     name="Chef"
-                    price="99.99€"
+                    price="199.99€"
                     description="Pour ceux qui veulent conquérir le monde."
                     href="mailto:contact@formenu.fr"
-                    features={['Tout ce qu\'il y a dans le plan Second', 'Création illimitée de menus', 'Accès aux thèmes premium', 'Analyse des ventes', 'ChatBot pour conseiller les clients', 'Support 24/7', 'Conseil 100% personnalisé par des experts', 'Statistiques poussées sur les comportements des clients', 'Saisonnalité des menus (automatique ou manuel), pour les fêtes et évènements spéciaux !',]}
+                    features={['Tout ce qu\'il y a dans le plan Second', 'Création illimitée de menus personnalisés', 'Accès aux thèmes premium', 'Analyse des ventes', 'ChatBot pour conseiller les clients', 'Support 24/7', 'Conseil 100% personnalisé par des experts', 'Statistiques poussées sur les comportements des clients', 'Saisonnalité des menus (automatique ou manuel), pour les fêtes et évènements spéciaux !',]}
                 />
             </div>
         </Container>
