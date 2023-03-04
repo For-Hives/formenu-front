@@ -9,28 +9,36 @@ import facile from '@/images/1 - ForMenu - Facile.webp'
 import intelligent from '@/images/1 - ForMenu - Intelligent.webp'
 import malin from '@/images/1 - ForMenu - Malin.webp'
 import legal from '@/images/1 - ForMenu - Legal.webp'
+
+import surmesure_mobile from '@/images/figma-export/0 - ForMenu - Carte - Accueil.webp'
+import pratique_mobile from '@/images/figma-export/1 - ForMenu - Carte - Desserts-1.webp'
+import facile_mobile from '@/images/figma-export/1 - ForMenu - Carte - Fruits de mer-7.webp'
+import intelligent_mobile from '@/images/figma-export/1 - ForMenu - Carte - Desserts-8.webp'
+import malin_mobile from '@/images/figma-export/1 - ForMenu - Carte - Fruits de mer-4.webp'
+import legal_mobile from '@/images/figma-export/1 - ForMenu - Carte - Desserts.webp'
+
 import Script from "next/script";
 
 const features = [{
     title: 'Sur-mesure !',
     description: "Votre identité visuelle est unique, votre menu doit l'être aussi ! tout est prévu pour que vous puissiez créer un menu qui vous ressemble.",
-    image: surmesure,
+    image: surmesure, imageMobile: surmesure_mobile,
 }, {
     title: 'Pratique !',
     description: "En cas de rupture de stock d'un aliment, plus besoin de prévenir chaque client, désactivez-le simplement dans votre menu ! Vos clients n'auront plus accès aux plats utilisant ce dernier.",
-    image: pratique,
+    image: pratique, imageMobile: pratique_mobile,
 }, {
     title: 'Facile !',
     description: "Une prise en main rapide et intuitive, vous n'aurez pas besoin de formation pour utiliser ForMenu ! Tout a été pensé pour que vous puissiez vous concentrer sur votre activité.",
-    image: facile,
+    image: facile, imageMobile: facile_mobile,
 }, {
     title: 'Intelligent !',
     description: 'Des conseils personnalisés pour vous aider à améliorer votre menu, des statistiques pour vous aider à prendre les bonnes décisions. ',
-    image: intelligent,
+    image: intelligent, imageMobile: intelligent_mobile,
 }, {
-    title: 'Malin !', description: 'Faites des économies et gagnez du temps ! (et oui ! plus besoin d\'aller voir un imprimeur pour faire imprimer vos menus !)', image: malin,
+    title: 'Malin !', description: 'Faites des économies et gagnez du temps ! (et oui ! plus besoin d\'aller voir un imprimeur pour faire imprimer vos menus !)', image: malin, imageMobile: malin_mobile,
 }, {
-    title: 'Légal !', description: 'Saviez vous que la loi vous oblige à afficher les allergènes sur vos menus ? ForMenu vous permet de le faire facilement !', image: legal,
+    title: 'Légal !', description: 'Saviez vous que la loi vous oblige à afficher les allergènes sur vos menus ? ForMenu vous permet de le faire facilement !', image: legal, imageMobile: legal_mobile,
 }]
 
 export function PrimaryFeatures() {
@@ -104,13 +112,25 @@ export function PrimaryFeatures() {
                                 </p>
                             </div>
                             <div
-                                className="mt-10 w-[45rem] overflow-hidden shadow-formenu-indigo-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                                className="block sm:hidden mt-10 w-full overflow-hidden shadow-formenu-indigo-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                                <Image
+                                    className="w-full"
+                                    src={feature.imageMobile}
+                                    alt="ForMenu mobile"
+                                    priority
+                                    sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                                    loading={"lazy"}
+                                />
+                            </div>
+                            <div
+                                className="hidden sm:block mt-10 w-[45rem] overflow-hidden shadow-formenu-indigo-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                                 <Image
                                     className="w-full"
                                     src={feature.image}
-                                    alt=""
+                                    alt="ForMenu"
                                     priority
                                     sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                                    loading={"lazy"}
                                 />
                             </div>
                         </Tab.Panel>))}
