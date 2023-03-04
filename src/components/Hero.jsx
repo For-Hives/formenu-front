@@ -2,18 +2,17 @@ import Image from 'next/image'
 
 import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
-import illustration from '@/images/Ilustration.png'
+import illustration from '@/images/Ilustration.webp'
 
 export function Hero() {
-    return (
-        <Container className="mx-auto max-w-7xl min-[1850px]:max-w-full px-6 py-8 flex-col xl:flex xl:items-center xl:flex-row xl:gap-x-10 xl:px-8 min-[1850px]:pl-64 min-[1850px]:pr-16 min-h-[calc((100vh-7.5rem))]">
-            <div className="mx-auto max-w-2xl xl:mx-0 xl:flex-auto xl:gap-8">
-                <div className={"w-full flex justify-center flex-col"}>
-                    <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-7xl relative text-center sm:text-left">
-                        Un menu
-                        {' '}
-
-                        <span className="relative whitespace-nowrap text-formenu-indigo-600">
+    return (<Container
+        className="mx-auto max-w-7xl min-[1850px]:max-w-full px-6 py-8 flex-col xl:flex xl:items-center xl:flex-row xl:gap-x-10 xl:px-8 min-[1850px]:pl-64 min-[1850px]:pr-16 min-h-[calc((100vh-7.5rem))]">
+        <div className="mx-auto max-w-2xl xl:mx-0 xl:flex-auto xl:gap-8">
+            <div className={"w-full flex justify-center flex-col"}>
+                <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-7xl relative text-center sm:text-left">
+                    Un menu
+                    {' '}
+                    <span className="relative whitespace-nowrap text-formenu-indigo-600">
                                   <svg
                                       aria-hidden="true"
                                       viewBox="0 0 418 42"
@@ -25,33 +24,30 @@ export function Hero() {
                                   </svg>
                                   <span className="relative">révolutionnaire</span>
                                 </span>
+                    {' '}
+                    pour une toute nouvelle expérience&nbsp;!
+                </h1>
+                <div>
+                    <p className="text-left mx-auto mt-6 max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
+                        Vous voulez apporter quelque chose de nouveau à votre restaurant&nbsp;?
+                        Vous voulez gagner du temps&nbsp;?
 
-                        {' '}
-
-                        pour une toute nouvelle expérience&nbsp;!
-                    </h1>
-                    <div>
-                        <p className="text-left mx-auto mt-6 max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
-                            Vous voulez apporter quelque chose de nouveau à votre restaurant&nbsp;?
-                            Vous voulez gagner du temps&nbsp;?
-
-                        </p>
-                        <p className="text-left mx-auto max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
-                            Cette application est faite pour vous&nbsp;!
-                            <br/>
-                            {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            L'expérience utilisateur est au cœur de votre application&nbsp;!
-                        </p>
-                    </div>
-                    <div className="mt-10 flex justify-start gap-x-6">
-                        <Button href="mailto:contact@formenu.fr">Je veux une demo</Button>
-                        <Button href="mailto:contact@formenu.fr" variant="outline">Comment ça fonctionne ?</Button>
-                    </div>
+                    </p>
+                    <p className="text-left mx-auto max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
+                        Cette application est faite pour vous&nbsp;!
+                        <br/>
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                        L'expérience utilisateur est au cœur de votre application&nbsp;!
+                    </p>
+                </div>
+                <div className="mt-10 flex justify-start gap-x-6">
+                    <Button href="mailto:contact@formenu.fr">Je veux une demo</Button>
+                    <Button href="mailto:contact@formenu.fr" variant="outline">Comment ça fonctionne ?</Button>
                 </div>
             </div>
-            <div className="min-[1850px]:pl-32 mt-16 sm:mt-24 xl:mt-0">
-                <Image src={illustration} alt={"Exemple application ForMenu carte de restaurant sur mesure"}></Image>
-            </div>
-        </Container>
-    )
+        </div>
+        <div className="min-[1850px]:pl-32 mt-16 sm:mt-24 xl:mt-0">
+            <Image src={illustration} alt={"Exemple application ForMenu carte de restaurant sur mesure"}></Image>
+        </div>
+    </Container>)
 }
