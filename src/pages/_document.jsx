@@ -16,13 +16,18 @@ export default function Document(props) {
                 crossOrigin="anonymous"
             />
             <Script strategy={"afterInteractive"}
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@400;500&display=swap"
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@400;500&display=swap"
             />
         </Head>
         <body className="flex flex-col">
         <Main/>
         <NextScript/>
+        <noscript
+            dangerouslySetInnerHTML={{
+                __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBJGCRP" height="0" width="0" style="display: none; visibility: hidden;" />`,
+            }}
+        />
         </body>
     </Html>)
 }

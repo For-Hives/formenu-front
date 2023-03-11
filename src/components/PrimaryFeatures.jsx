@@ -36,9 +36,15 @@ const features = [{
     description: 'Des conseils personnalisés pour vous aider à améliorer votre menu, des statistiques pour vous aider à prendre les bonnes décisions. ',
     image: intelligent, imageMobile: intelligent_mobile,
 }, {
-    title: 'Malin !', description: 'Faites des économies et gagnez du temps ! (et oui ! plus besoin d\'aller voir un imprimeur pour faire imprimer vos menus !)', image: malin, imageMobile: malin_mobile,
+    title: 'Malin !',
+    description: 'Faites des économies et gagnez du temps ! (et oui ! plus besoin d\'aller voir un imprimeur pour faire imprimer vos menus !)',
+    image: malin,
+    imageMobile: malin_mobile,
 }, {
-    title: 'Légal !', description: 'Saviez vous que la loi vous oblige à afficher les allergènes sur vos menus ? ForMenu vous permet de le faire facilement !', image: legal, imageMobile: legal_mobile,
+    title: 'Légal !',
+    description: 'Saviez vous que la loi vous oblige à afficher les allergènes sur vos menus ? ForMenu vous permet de le faire facilement !',
+    image: legal,
+    imageMobile: legal_mobile,
 }]
 
 export function PrimaryFeatures() {
@@ -78,7 +84,8 @@ export function PrimaryFeatures() {
                 className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
             >
                 {({selectedIndex}) => (<>
-                    <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-4 min-[1950px]:col-span-4">
+                    <div
+                        className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-4 min-[1950px]:col-span-4">
                         <Tab.List id={"tablist"}
                                   className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                             {features.map((feature, featureIndex) => (<div
@@ -89,7 +96,8 @@ export function PrimaryFeatures() {
                                     <Tab
                                         className={clsx('font-display text-lg [&:not(:focus-visible)]:focus:outline-none', selectedIndex === featureIndex ? 'text-formenu-indigo-600 lg:text-white' : 'text-formenu-indigo-100 hover:text-white lg:text-white')}
                                     >
-                                        <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl"/>
+                                        <span
+                                            className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl"/>
                                         {feature.title}
                                     </Tab>
                                 </h3>
@@ -117,7 +125,6 @@ export function PrimaryFeatures() {
                                     className="w-full"
                                     src={feature.imageMobile}
                                     alt="ForMenu mobile"
-                                    priority
                                     sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                                     loading={"lazy"}
                                 />
@@ -128,7 +135,6 @@ export function PrimaryFeatures() {
                                     className="w-full"
                                     src={feature.image}
                                     alt="ForMenu"
-                                    priority
                                     sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                                     loading={"lazy"}
                                 />

@@ -66,6 +66,7 @@ function Plan({name, price, description, href, features, featured = false}) {
         </ul>
         <Button
             href={href}
+            id={`pricing-${name}`}
             variant={featured ? 'solid' : 'outline'}
             color="white"
             className={"mt-8" + (featured ? "" : " bg-formenu-indigo-600 lg:bg-transparent")}
