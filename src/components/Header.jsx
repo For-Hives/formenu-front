@@ -66,8 +66,8 @@ function MobileNavigation() {
                     as="div"
                     className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
                 >
-                    <MobileNavLink href="#features">Fonctionnalités</MobileNavLink>
-                    <MobileNavLink href="#pricing">Prix</MobileNavLink>
+                    <MobileNavLink href="/#features">Fonctionnalités</MobileNavLink>
+                    <MobileNavLink href="/#pricing">Prix</MobileNavLink>
                 </Popover.Panel>
             </Transition.Child>
         </Transition.Root>
@@ -79,19 +79,19 @@ export function Header() {
         <Container>
             <nav className="relative z-50 flex justify-between">
                 <div className="flex items-center md:gap-x-12">
-                    <Link href="#" aria-label="Home">
+                    <Link href="/" aria-label="Home">
                         <Logo className="h-10 w-auto"/>
                     </Link>
                     <div className="hidden md:flex md:gap-x-6">
-                        <NavLink href="#features">Fonctionnalités</NavLink>
-                        <NavLink href="#pricing">Prix</NavLink>
+                        <NavLink href="/#features">Fonctionnalités</NavLink>
+                        <NavLink href="/#pricing">Prix</NavLink>
                     </div>
                 </div>
                 <div className="flex items-center gap-x-5 md:gap-x-8">
                     <Button href="mailto:contact@formenu.fr" color="blue">
-              <span>
-                Commencer <span className="hidden lg:inline">maintenant</span>
-              </span>
+                        <span>
+                            Commencer <span className="hidden lg:inline">maintenant</span>
+                        </span>
                     </Button>
                     <div className="-mr-1 md:hidden">
                         <MobileNavigation/>

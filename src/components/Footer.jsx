@@ -8,10 +8,11 @@ export function Footer() {
             <div className="py-16">
                 <Logo className="mx-auto h-10 w-auto"/>
                 <nav className="mt-10 text-sm" aria-label="quick links">
-                    <div className="-my-1 flex justify-center gap-x-6">
+                    <div className="-my-1 flex flex-wrap justify-center gap-x-6">
                         <NavLink href="#features">Fonctionnalité</NavLink>
                         <NavLink href="#pricing">Prix</NavLink>
                         <NavLink href="mailto:contact@formenu.fr">Contact</NavLink>
+                        <NavLink href={"/programme-dapport-daffaires"}><i>Programme d&apos;apport d&apos;affaires</i></NavLink>
                     </div>
                 </nav>
             </div>
