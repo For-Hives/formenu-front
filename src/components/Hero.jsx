@@ -41,8 +41,8 @@ export function Hero() {
                     </p>
                 </div>
                 <div className="mt-10 flex justify-start gap-x-6">
-                    <Button href="mailto:contact@formenu.fr">Je veux une demo</Button>
-                    <Button href="mailto:contact@formenu.fr" variant="outline">Comment ça fonctionne ?</Button>
+                    <Button href="https://www.figma.com/proto/ZxIj6Kc9QWGo2uBoudSWBA/ForMenu?page-id=1131%3A2490&node-id=1518%3A45217&viewport=400%2C131%2C0.14&scaling=scale-down&starting-point-node-id=1518%3A45217">Je veux une demo</Button>
+                    <Button href="mailto:contact@formenu.fr" variant="outline">Nous contacter</Button>
                 </div>
             </div>
         </div>
