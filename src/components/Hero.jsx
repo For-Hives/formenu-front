@@ -28,7 +28,7 @@ export function Hero() {
                     pour&nbsp;une&nbsp;toute nouvelle expérience&nbsp;!
                 </h1>
                 <div>
-                    <p className="text-left mx-auto mt-6 max-w-2xl text-sm sm:text-md tracking-tight text-slate-600">
+                    <p className="text-left mx-auto mt-6 max-w-2xl text-sm sm:text-md tracking-tight text-slate-700">
                         Vous voulez apporter quelque chose de nouveau à votre restaurant&nbsp;?
                         Vous voulez gagner du temps&nbsp;?
 
