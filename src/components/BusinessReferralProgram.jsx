@@ -81,8 +81,12 @@ export function BusinessReferralProgram() {
                 </ul>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-slate-900">Par où commencer ?</h2>
                 <p className="mt-6">
-                    C&apos;est très simple, il vous suffit de lire la suite, de récupérer les informations ci-dessous, de nous poser vos questions,
-                    et il ne vous restera plus qu&apos;à trouver des restaurateurs intéressés pour commencer à gagner de l&apos;argent&nbsp;facilement !
+                    C&apos;est très simple, il vous suffit de lire la suite, de récupérer les informations ci-dessous, de nous poser vos questions,{' '}
+                    et de nous contacter pour passer un entretien, afin de vous expliquer plus en détail notre programme d&apos;apport d&apos;affaires.
+                </p>
+                <p className="mt-6">
+                    Une fois les entretiens terminés, nous vous recontacterons pour vous donner accès aux différentes ressources pour la gestion des apports d&apos;affaires{' '}
+                    afin de suivre l&apos;avancement des différents contacts effectués.
                 </p>
                 <figure className="mt-10 border-l border-formenu-indigo-600 pl-4 sm:pl-9 relative">
                     <div className={"w-full flex justify-end absolute top-0 right-0"}>
@@ -222,7 +226,7 @@ export function BusinessReferralProgram() {
                     </div>
                     <div className={"mt-8"}>
                         <Button href="mailto:contact@formenu.fr" color="blue">
-                            Des questions ? Contactez-nous !
+                            Intéressés ? Des questions ? Contactez-nous !
                         </Button>
                     </div>
                 </figcaption>
