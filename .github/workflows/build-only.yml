@@ -2,7 +2,7 @@ name: Just Build Docker
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   docker:

@@ -1,282 +1,481 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Email de contact</title>
-    <style type="text/css">
-        /* ----- Custom Font Import ----- */
-        @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext);
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email de contact</title>
+		<style type="text/css">
+			/* ----- Custom Font Import ----- */
+			@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin,latin-ext);
 
-        /* ----- Text Styles ----- */
-        table {
-            font-family: 'Lato', Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-font-smoothing: antialiased;
-            font-smoothing: antialiased;
-        }
+			/* ----- Text Styles ----- */
+			table {
+				font-family: 'Lato', Arial, sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-font-smoothing: antialiased;
+				font-smoothing: antialiased;
+			}
 
-        @media only screen and (max-width: 700px) {
-            /* ----- Base styles ----- */
-            .full-width-container {
-                padding: 0 !important;
-            }
+			@media only screen and (max-width: 700px) {
+				/* ----- Base styles ----- */
+				.full-width-container {
+					padding: 0 !important;
+				}
 
-            .container {
-                width: 100% !important;
-            }
+				.container {
+					width: 100% !important;
+				}
 
-            /* ----- Header ----- */
-            .header td {
-                padding: 30px 15px 30px 15px !important;
-            }
+				/* ----- Header ----- */
+				.header td {
+					padding: 30px 15px 30px 15px !important;
+				}
 
-            /* ----- Projects list ----- */
-            .projects-list {
-                display: block !important;
-            }
+				/* ----- Projects list ----- */
+				.projects-list {
+					display: block !important;
+				}
 
-            .projects-list tr {
-                display: block !important;
-            }
+				.projects-list tr {
+					display: block !important;
+				}
 
-            .projects-list td {
-                display: block !important;
-            }
+				.projects-list td {
+					display: block !important;
+				}
 
-            .projects-list tbody {
-                display: block !important;
-            }
+				.projects-list tbody {
+					display: block !important;
+				}
 
-            .projects-list img {
-                margin: 0 auto 25px auto;
-            }
+				.projects-list img {
+					margin: 0 auto 25px auto;
+				}
 
-            /* ----- Half block ----- */
-            .half-block {
-                display: block !important;
-            }
+				/* ----- Half block ----- */
+				.half-block {
+					display: block !important;
+				}
 
-            .half-block tr {
-                display: block !important;
-            }
+				.half-block tr {
+					display: block !important;
+				}
 
-            .half-block td {
-                display: block !important;
-            }
+				.half-block td {
+					display: block !important;
+				}
 
-            .half-block__image {
-                width: 100% !important;
-                background-size: cover;
-            }
+				.half-block__image {
+					width: 100% !important;
+					background-size: cover;
+				}
 
-            .half-block__content {
-                width: 100% !important;
-                box-sizing: border-box;
-                padding: 25px 15px 25px 15px !important;
-            }
+				.half-block__content {
+					width: 100% !important;
+					box-sizing: border-box;
+					padding: 25px 15px 25px 15px !important;
+				}
 
-            /* ----- Hero subheader ----- */
-            .hero-subheader__title {
-                padding: 80px 15px 15px 15px !important;
-                font-size: 35px !important;
-            }
+				/* ----- Hero subheader ----- */
+				.hero-subheader__title {
+					padding: 80px 15px 15px 15px !important;
+					font-size: 35px !important;
+				}
 
-            .hero-subheader__content {
-                padding: 0 15px 90px 15px !important;
-            }
+				.hero-subheader__content {
+					padding: 0 15px 90px 15px !important;
+				}
 
-            /* ----- Title block ----- */
-            .title-block {
-                padding: 0 15px 0 15px;
-            }
+				/* ----- Title block ----- */
+				.title-block {
+					padding: 0 15px 0 15px;
+				}
 
-            /* ----- Paragraph block ----- */
-            .paragraph-block__content {
-                padding: 25px 15px 18px 15px !important;
-            }
+				/* ----- Paragraph block ----- */
+				.paragraph-block__content {
+					padding: 25px 15px 18px 15px !important;
+				}
 
-            /* ----- Info bullets ----- */
-            .info-bullets {
-                display: block !important;
-            }
+				/* ----- Info bullets ----- */
+				.info-bullets {
+					display: block !important;
+				}
 
-            .info-bullets tr {
-                display: block !important;
-            }
+				.info-bullets tr {
+					display: block !important;
+				}
 
-            .info-bullets td {
-                display: block !important;
-            }
+				.info-bullets td {
+					display: block !important;
+				}
 
-            .info-bullets tbody {
-                display: block;
-            }
+				.info-bullets tbody {
+					display: block;
+				}
 
-            .info-bullets__icon {
-                text-align: center;
-                padding: 0 0 15px 0 !important;
-            }
+				.info-bullets__icon {
+					text-align: center;
+					padding: 0 0 15px 0 !important;
+				}
 
-            .info-bullets__content {
-                text-align: center;
-            }
+				.info-bullets__content {
+					text-align: center;
+				}
 
-            .info-bullets__block {
-                padding: 25px !important;
-            }
+				.info-bullets__block {
+					padding: 25px !important;
+				}
 
-            /* ----- CTA block ----- */
-            .cta-block__title {
-                padding: 35px 15px 0 15px !important;
-            }
+				/* ----- CTA block ----- */
+				.cta-block__title {
+					padding: 35px 15px 0 15px !important;
+				}
 
-            .cta-block__content {
-                padding: 20px 15px 27px 15px !important;
-            }
+				.cta-block__content {
+					padding: 20px 15px 27px 15px !important;
+				}
 
-            .cta-block__button {
-                padding: 0 15px 0 15px !important;
-            }
-        }
-    </style>
+				.cta-block__button {
+					padding: 0 15px 0 15px !important;
+				}
+			}
+		</style>
 
-    <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml><![endif]-->
-</head>
+		<!--[if gte mso 9]>
+			<xml>
+				<o:OfficeDocumentSettings>
+					<o:AllowPNG />
+					<o:PixelsPerInch>96</o:PixelsPerInch>
+				</o:OfficeDocumentSettings>
+			</xml><!
+		[endif]-->
+	</head>
 
-<body style="padding: 0; margin: 0;" bgcolor="#eeeeee">
+	<body style="padding: 0; margin: 0" bgcolor="#eeeeee">
+		<!-- / Full width container -->
+		<table
+			class="full-width-container"
+			border="0"
+			cellpadding="0"
+			cellspacing="0"
+			height="100%"
+			width="100%"
+			bgcolor="#eeeeee"
+			style="width: 100%; height: 100%; padding: 30px 0 30px 0"
+		>
+			<tr>
+				<td align="center" valign="top">
+					<!-- / 700px container -->
+					<table
+						class="container"
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="700"
+						bgcolor="#f7f9fc"
+						style="width: 700px"
+					>
+						<tr>
+							<td align="center" valign="top">
+								<!-- / Hero subheader -->
+								<table
+									class="hero-subheader container"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									width="620"
+									style="width: 620px"
+								>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											🌟 Bonjour cher restaurateur,
+										</td>
+									</tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											✨ Découvrez ForMenu, l'application qui réinvente vos
+											cartes de restaurant pour une expérience unique et
+											personnalisée, adaptée à notre monde en pleine
+											numérisation.
+										</td>
+									</tr>
 
-<!-- / Full width container -->
-<table class="full-width-container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee"
-       style="width: 100%; height: 100%; padding: 30px 0 30px 0;">
-    <tr>
-        <td align="center" valign="top">
-            <!-- / 700px container -->
-            <table class="container" border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#f7f9fc" style="width: 700px;">
-                <tr>
-                    <td align="center" valign="top">
-                        <!-- / Hero subheader -->
-                        <table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    🌟 Bonjour cher restaurateur,
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    ✨ Découvrez ForMenu, l'application qui réinvente vos  cartes de restaurant pour une expérience unique et personnalisée, adaptée à notre monde en pleine numérisation.
-                                </td>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    🎨 ForMenu, c'est :
-                                    <ul>
-                                        <li>
-                                            Un design sur mesure, à l'image de votre établissement
-                                        </li>
-                                        <li>
-                                            Des options de tri spécifique : allergènes, régimes, prix, goûts et mots-clés
-                                        </li>
-                                        <li>
-                                            Une actualisation de votre carte en temps réel simple et rapide sans l'aide d'un designer ou imprimeur
-                                        </li>
-                                        <li>
-                                            Des cartes adaptables pour les événements ou menus quotidiens, hebdomadaires et mensuels
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    🚀 Pourquoi pas vous ? Rejoignez-nous et faites partie des bêta-testeurs tout en profitant d'une offre préférentielle à VIE, en échange de vos retours constructifs !
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    👉 Contactez-nous pour rejoindre l'aventure ForMenu. Bénéficiez dès à présent d'une carte à l'image de votre établissement !
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    🤝 Ensemble, façonnons l'avenir des cartes de restaurant avec ForMenu.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 0px 0;" align="left">
-                                    À très vite,
-                                </td>
-                            </tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											🎨 ForMenu, c'est :
+											<ul>
+												<li>
+													Un design sur mesure, à l'image de votre établissement
+												</li>
+												<li>
+													Des options de tri spécifique : allergènes, régimes,
+													prix, goûts et mots-clés
+												</li>
+												<li>
+													Une actualisation de votre carte en temps réel simple
+													et rapide sans l'aide d'un designer ou imprimeur
+												</li>
+												<li>
+													Des cartes adaptables pour les événements ou menus
+													quotidiens, hebdomadaires et mensuels
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											🚀 Pourquoi pas vous ? Rejoignez-nous et faites partie des
+											bêta-testeurs tout en profitant d'une offre préférentielle
+											à VIE, en échange de vos retours constructifs !
+										</td>
+									</tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											👉 Contactez-nous pour rejoindre l'aventure ForMenu.
+											Bénéficiez dès à présent d'une carte à l'image de votre
+											établissement !
+										</td>
+									</tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											🤝 Ensemble, façonnons l'avenir des cartes de restaurant
+											avec ForMenu.
+										</td>
+									</tr>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 0px 0;
+											"
+											align="left"
+										>
+											À très vite,
+										</td>
+									</tr>
 
-                            <tr>
-                                <td class="hero-subheader__content" style="font-size: 16px; line-height: 27px; color: #0f172a; padding: 30px 60px 60px 0;" align="left">
-                                    L'équipe ForMenu 🍴
-                                </td>
-                            </tr>
-                        </table>
+									<tr>
+										<td
+											class="hero-subheader__content"
+											style="
+												font-size: 16px;
+												line-height: 27px;
+												color: #0f172a;
+												padding: 30px 60px 60px 0;
+											"
+											align="left"
+										>
+											L'équipe ForMenu 🍴
+										</td>
+									</tr>
+								</table>
 
-                        <table class="container cta-block " border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                            <tr>
-                                <td align="center" valign="top">
-                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620"
-                                           style="width: 620px; padding: 30px 0 60px 0;  border-bottom: solid 2px rgba(15, 23, 42,0.05);">
-                                        <tbody>
-                                        <tr>
-                                            <td align="center">
-                                                <table class="container" border="0" cellpadding="0" cellspacing="0">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td class="cta-block__button" width="230" align="center" style="width: 200px; ">
-                                                            <a href="https://formenu.fr/"
-                                                               style="border: 2px solid #4f46e5; color: #4f46e5; text-decoration: none; margin-right: 15px; padding: 15px 45px; text-transform: uppercase; display: block; text-align: center; font-size: 16px;">
-                                                                Visiter notre site
-                                                            </a>
-                                                        </td>
-                                                        <td class="cta-block__button" width="230" align="center" style="width: 200px;">
-                                                            <a href="https://www.figma.com/proto/ZxIj6Kc9QWGo2uBoudSWBA/ForMenu?page-id=1131%3A2490&node-id=1518%3A45217&viewport=604%2C390%2C0.47&scaling=scale-down&starting-point-node-id=1518%3A45217"
-                                                               style="border: 2px solid #4f46e5; color: #4f46e5; text-decoration: none; margin-left: 15px; padding: 15px 45px; text-transform: uppercase; display: block; text-align: center; font-size: 16px;">
-                                                                Voir la démo
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+								<table
+									class="cta-block container"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									width="100%"
+								>
+									<tbody>
+										<tr>
+											<td align="center" valign="top">
+												<table
+													class="container"
+													border="0"
+													cellpadding="0"
+													cellspacing="0"
+													width="620"
+													style="
+														width: 620px;
+														padding: 30px 0 60px 0;
+														border-bottom: solid 2px rgba(15, 23, 42, 0.05);
+													"
+												>
+													<tbody>
+														<tr>
+															<td align="center">
+																<table
+																	class="container"
+																	border="0"
+																	cellpadding="0"
+																	cellspacing="0"
+																>
+																	<tbody>
+																		<tr>
+																			<td
+																				class="cta-block__button"
+																				width="230"
+																				align="center"
+																				style="width: 200px"
+																			>
+																				<a
+																					href="https://formenu.fr/"
+																					style="
+																						border: 2px solid #4f46e5;
+																						color: #4f46e5;
+																						text-decoration: none;
+																						margin-right: 15px;
+																						padding: 15px 45px;
+																						text-transform: uppercase;
+																						display: block;
+																						text-align: center;
+																						font-size: 16px;
+																					"
+																				>
+																					Visiter notre site
+																				</a>
+																			</td>
+																			<td
+																				class="cta-block__button"
+																				width="230"
+																				align="center"
+																				style="width: 200px"
+																			>
+																				<a
+																					href="https://www.figma.com/proto/ZxIj6Kc9QWGo2uBoudSWBA/ForMenu?page-id=1131%3A2490&node-id=1518%3A45217&viewport=604%2C390%2C0.47&scaling=scale-down&starting-point-node-id=1518%3A45217"
+																					style="
+																						border: 2px solid #4f46e5;
+																						color: #4f46e5;
+																						text-decoration: none;
+																						margin-left: 15px;
+																						padding: 15px 45px;
+																						text-transform: uppercase;
+																						display: block;
+																						text-align: center;
+																						font-size: 16px;
+																					"
+																				>
+																					Voir la démo
+																				</a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 
-                        <!-- / Footer -->
-                        <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
-                            <tr>
-                                <td align="center">
-                                    <table class="container" border="0" cellpadding="0" cellspacing="0" width="620" align="center"
-                                           style="padding: 30px 0 30px 0;" align="left">
-                                        <tr>
-                                            <td style="color: #0f172a; text-align: center; font-size: 15px; padding: 10px 0 10px 0; line-height: 22px;">Copyright &copy; 2023 <a
-                                                    href="https://formenu.fr/" target="_blank" style="text-decoration: none; border-bottom: 1px solid #4f46e5; color: #4f46e5;">ForMenu</a>.
-                                                <br/>All rights reserved.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!-- /// Footer -->
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</body>
+								<!-- / Footer -->
+								<table
+									class="container"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									width="100%"
+									align="center"
+								>
+									<tr>
+										<td align="center">
+											<table
+												class="container"
+												border="0"
+												cellpadding="0"
+												cellspacing="0"
+												width="620"
+												align="center"
+												style="padding: 30px 0 30px 0"
+												align="left"
+											>
+												<tr>
+													<td
+														style="
+															color: #0f172a;
+															text-align: center;
+															font-size: 15px;
+															padding: 10px 0 10px 0;
+															line-height: 22px;
+														"
+													>
+														Copyright &copy; 2023
+														<a
+															href="https://formenu.fr/"
+															target="_blank"
+															style="
+																text-decoration: none;
+																border-bottom: 1px solid #4f46e5;
+																color: #4f46e5;
+															"
+															>ForMenu</a
+														>. <br />All rights reserved.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- /// Footer -->
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
