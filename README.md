@@ -25,6 +25,7 @@ To learn more about the technologies used in this site template, see the followi
 - [Headless UI](https://headlessui.dev) - the official Headless UI documentation
 
 ## Deploy on VPS
+
 cd /var/www/ForMenu
 sudo git pull
 sudo npm install
@@ -36,5 +37,6 @@ sudo pm2 restart 0
 sudo pm2 start npm --name "ForMenu" -- start
 
 ## Deploy on CapRover
+
 ~ just push the new image to andycinquin/siteformenu-prod  
 ~ restart the container on CapRover
