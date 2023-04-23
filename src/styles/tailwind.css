@@ -34,3 +34,18 @@ body {
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8fafc", endColorstr="#f8fafc", GradientType=1);
 }
+
+@media screen and (min-width: 768px) {
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 7px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	::-webkit-scrollbar-thumb {
+		border-radius: 2rem;
+		background-color: #19191e4d;
+		-webkit-box-shadow: 0 0 1px hsl(0deg 0% 100% / 50%);
+	}
+}
