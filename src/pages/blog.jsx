@@ -233,12 +233,11 @@ function Photos() {
     )
 }
 
-
-export default function Home() {
+/**
+ * Blog page
+ */
+export default function Blog() {
     const pb = initPocketBase()
-
-    const [listArticle, setListArticle] = React.useState([])
-
 
     /**
      * Get articles, sort by created date, and limit to 3, then set to state
