@@ -2,6 +2,8 @@ import logoPlanetaria from "@/images/planetaria.svg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import BriefcaseIcon from "@/components/blog/BriefcaseIcon";
+import ArrowRightIcon from "@/components/blog/ArrowRightIcon";
 
 export default function Resume() {
     let resume = [

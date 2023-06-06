@@ -6,10 +6,10 @@ import {Header} from '@/components/Header'
 import Loader from '@/components/Loader'
 import {initPocketBase} from "../../lib/pocketbase";
 import {useQuery} from "@tanstack/react-query";
-import {Photos} from "@/components/blog/photos";
-import {Resume} from "@/components/blog/resume";
-import {Newsletter} from "@/components/blog/newsletter";
-import {SocialLink} from "@/components/blog/socialLink";
+import Photos from "@/components/blog/photos";
+import Resume from "@/components/blog/resume";
+import Newsletter from "@/components/blog/newsletter";
+import SocialLink from "@/components/blog/socialLink";
 
 /**
  * Blog page
@@ -83,11 +83,12 @@ export default function Blog() {
                              */
                             data.map((article) => (
                                 // fragment : permet de ne pas avoir de div en plus dans le dom & de wrap les éléments
-                                <>
-                                    <div key={article.id}>
-                                        <h2>{article.title}</h2>
-                                    </div>
-                                </>
+                                <div key={article.id}>
+                                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                                        {article.id}
+                                    </p>
+                                    <h2>{article.title}</h2>
+                                </div>
                             ))
 
                         }
