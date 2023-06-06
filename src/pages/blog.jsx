@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import React from 'react'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -15,6 +16,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { Header } from '@/components/Header'
+import PocketBase from 'pocketbase'
 import loader from '@/components/Loader'
 import { log } from 'next/dist/server/typescript/utils'
 
@@ -226,8 +228,19 @@ function Photos() {
 	)
 }
 
-export default function Home({ articles }) {
-	console.log(articles)
+const pb = new PocketBase('https://api.formenu.fr')
+
+export default function Home() {
+	const [articles, setArticles] = React.useState([])
+	const resultList = pb
+		.collection('articles')
+		.getList(1, 3, {
+			sort: '-created',
+		})
+		.then(data => {
+			setArticles(data)
+		})
+
 	return (
 		<>
 			<Head>
@@ -270,8 +283,13 @@ export default function Home({ articles }) {
 			<Container className="mt-24 md:mt-28">
 				<div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
 					<div className="flex flex-col gap-16">
-						{articles &&
-							articles.map(item => <Article key={item.slug} article={item} />)}
+						{/*{articles &&*/}
+						{/*	articles.map(item => <Article key={item.slug} article={item} />)}*/}
+						{!!articles
+							? articles.map((article, index) => {
+									return <div key={article.id}>{article.title}</div>
+							  })
+							: null}
 					</div>
 					<div className="space-y-10 lg:pl-16 xl:pl-24">
 						<Newsletter />
