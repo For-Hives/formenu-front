@@ -2,7 +2,7 @@ import {Card} from "@/components/Card";
 import {formatDate} from "@/lib/formatDate";
 import React from "react";
 
-function Article({article}) {
+export default function Article({article}) {
     return (
         <Card as="article">
             <Card.Title href={`/articles/${article.slug}`}>

@@ -7,7 +7,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
-export function Photos() {
+export default function Photos() {
     let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
     return (

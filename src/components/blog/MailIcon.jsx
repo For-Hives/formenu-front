@@ -1,6 +1,6 @@
 import React from "react";
 
-function MailIcon(props) {
+export default function MailIcon(props) {
     return (
         <svg
             viewBox="0 0 24 24"

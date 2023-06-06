@@ -1,6 +1,7 @@
 import React from "react";
+import MailIcon from "@/components/blog/mailIcon";
 
-export function Newsletter() {
+export default function Newsletter() {
     return (
         <form
             action="/thank-you"

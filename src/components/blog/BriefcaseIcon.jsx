@@ -1,6 +1,6 @@
 import React from "react";
 
-function BriefcaseIcon(props) {
+export default function BriefcaseIcon(props) {
     return (
         <svg
             viewBox="0 0 24 24"

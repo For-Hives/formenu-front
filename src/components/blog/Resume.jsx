@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export function Resume() {
+export default function Resume() {
     let resume = [
         {
             company: 'v.01',

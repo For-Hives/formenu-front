@@ -1,6 +1,6 @@
 import React from "react";
 
-function ArrowRightIcon(props) {
+export default function ArrowRightIcon(props) {
     return (
         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
             <path
