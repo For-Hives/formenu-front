@@ -1,5 +1,5 @@
 import React from "react";
-import MailIcon from "@/components/blog/mailIcon";
+import MailIcon from "@/components/blog/MailIcon";
 
 export default function Newsletter() {
     return (

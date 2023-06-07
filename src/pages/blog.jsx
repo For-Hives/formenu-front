@@ -6,10 +6,10 @@ import {Header} from '@/components/Header'
 import Loader from '@/components/Loader'
 import {initPocketBase} from "../../lib/pocketbase";
 import {useQuery} from "@tanstack/react-query";
-import Photos from "@/components/blog/photos";
-import Resume from "@/components/blog/resume";
-import Newsletter from "@/components/blog/newsletter";
-import SocialLink from "@/components/blog/socialLink";
+import Photos from "@/components/blog/Photos";
+import Resume from "@/components/blog/Resume";
+import Newsletter from "@/components/blog/Newsletter";
+import SocialLink from "@/components/blog/SocialLink";
 
 /**
  * Blog page
