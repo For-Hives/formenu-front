@@ -85,9 +85,11 @@ export default function Blog() {
 								// fragment : permet de ne pas avoir de div en plus dans le dom & de wrap les éléments
 								<div key={article.id}>
 									<p className="text-sm text-zinc-500 dark:text-zinc-400">
-										{article.id}
+										{article.title}
 									</p>
-									<h2>{article.title}</h2>
+									<h2 InnerHTML={{ __html: article.content }}>
+										{article.content}
+									</h2>
 								</div>
 							))
 						}
