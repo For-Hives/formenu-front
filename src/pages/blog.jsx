@@ -10,6 +10,9 @@ import Photos from '@/components/blog/Photos'
 import Resume from '@/components/blog/Resume'
 import Newsletter from '@/components/blog/Newsletter'
 import SocialLink from '@/components/blog/SocialLink'
+import { convertToStringDate } from '@/utils/utils'
+import Link from 'next/Link'
+import { Footer } from '@/components/Footer'
 
 /**
  * Blog page
@@ -85,9 +88,27 @@ export default function Blog() {
 								// fragment : permet de ne pas avoir de div en plus dans le dom & de wrap les éléments
 								<div key={article.id}>
 									<h2 className="text-sm text-zinc-500 dark:text-zinc-400">
-										{article.title}
+										{convertToStringDate(article.date)}
 									</h2>
-									<div dangerouslySetInnerHTML={{ __html: article.content }} />
+									<h3 className="text-sm text-zinc-500 dark:text-zinc-400">
+										{article.title}
+									</h3>
+									<div
+										dangerouslySetInnerHTML={{
+											__html: article.excerpt,
+										}}
+									/>
+									<Link
+										className={
+											'flex items-center text-sm font-medium text-indigo-900'
+										}
+										href={`/blog/${article.slug}`}
+									>
+										{"Lire l'article"}
+										<span className="material-icons-round mt-1 text-base text-indigo-900">
+											chevron_right
+										</span>
+									</Link>
 								</div>
 							))
 						}
@@ -96,6 +117,9 @@ export default function Blog() {
 						<Newsletter />
 						<Resume />
 					</div>
+				</div>
+				<div className="flex w-full justify-center">
+					<Footer alternativemode={true} />
 				</div>
 			</Container>
 		</>

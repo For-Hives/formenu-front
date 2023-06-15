@@ -1,3 +1,4 @@
+import 'material-icons/iconfont/material-icons.css'
 import 'focus-visible'
 import '@/styles/tailwind.css'
 import Script from 'next/script'
