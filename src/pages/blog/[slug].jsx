@@ -2,17 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 
 import { Container } from '@/components/Container'
-import { InstagramIcon, LinkedInIcon } from '@/components/SocialIcons'
 import { Header } from '@/components/Header'
-import Loader from '@/components/Loader'
-
-import { useQuery } from '@tanstack/react-query'
-import Photos from '@/components/blog/Photos'
-import Resume from '@/components/blog/Resume'
-import Newsletter from '@/components/blog/Newsletter'
-import SocialLink from '@/components/blog/SocialLink'
 import { convertToStringDate } from '@/utils/utils'
-import Link from 'next/Link'
 import { Footer } from '@/components/Footer'
 
 function Slug({ articleData }) {
