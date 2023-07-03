@@ -30,14 +30,14 @@ function Slug({ articleData }) {
 			<Header></Header>
 			<Container className="mt-9">
 				<div className="mx-auto max-w-2xl">
-					<div className="text-sm text-zinc-500 dark:text-zinc-400">
+					<div className="text-sm text-slate-500 dark:text-slate-400">
 						{convertToStringDate(articleData.date)}
 					</div>
-					<h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+					<h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
 						{articleData.title}
 					</h1>
 					<div
-						className=" mt-6 text-base text-zinc-600 dark:text-zinc-400"
+						className=" mt-6 text-base text-slate-600 dark:text-slate-400"
 						dangerouslySetInnerHTML={{ __html: articleData.content }}
 					></div>
 					<Footer alternativemode={true} />
