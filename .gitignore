@@ -33,5 +33,6 @@ yarn-error.log*
 
 .idea
 pnpm-lock.yaml
+package-lock.json
 
 .env

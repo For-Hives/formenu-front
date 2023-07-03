@@ -2,9 +2,11 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
-export function Footer() {
+export function Footer(props) {
+	const alternativemode = props.alternativemode
+
 	return (
-		<footer className="bg-slate-50">
+		<footer className={alternativemode ? 'bg-transparent' : 'bg-slate-50'}>
 			<Container>
 				<div className="py-16">
 					<Logo className="mx-auto h-10 w-auto" />
