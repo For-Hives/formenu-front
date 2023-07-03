@@ -63,14 +63,14 @@ export default function Blog() {
 					</p>
 					<div className="mt-6 flex gap-6">
 						<SocialLink
-							href="https://instagram.com"
-							aria-label="Follow on Instagram"
+							href="https://www.instagram.com/formenu.fr/"
+							aria-label="Suivez ForMenu sur Instagram"
 							icon={InstagramIcon}
 						/>
 
 						<SocialLink
-							href="https://linkedin.com"
-							aria-label="Follow on LinkedIn"
+							href="https://www.linkedin.com/company/formenu/"
+							aria-label="Suivez ForMenu on LinkedIn"
 							icon={LinkedInIcon}
 						/>
 					</div>
@@ -114,7 +114,8 @@ export default function Blog() {
 						}
 					</div>
 					<div className="space-y-10 lg:pl-16 xl:pl-24">
-						<Newsletter />
+						{/*todo*/}
+						{/*<Newsletter />*/}
 						<Resume />
 					</div>
 				</div>

@@ -17,7 +17,7 @@ export default function Photos() {
 					<div
 						key={image.src}
 						className={clsx(
-							'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 sm:w-72 sm:rounded-2xl',
+							'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-slate-100 sm:w-72 sm:rounded-2xl',
 							rotations[imageIndex % rotations.length]
 						)}
 					>
