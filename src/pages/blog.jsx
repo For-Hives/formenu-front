@@ -3,9 +3,6 @@ import React from 'react'
 import { Container } from '@/components/Container'
 import { InstagramIcon, LinkedInIcon } from '@/components/SocialIcons'
 import { Header } from '@/components/Header'
-import Loader from '@/components/Loader'
-import { initPocketBase } from '../../lib/pocketbase'
-import { useQuery } from '@tanstack/react-query'
 import Photos from '@/components/blog/Photos'
 import Resume from '@/components/blog/Resume'
 import Newsletter from '@/components/blog/Newsletter'
@@ -17,27 +14,7 @@ import { Footer } from '@/components/Footer'
 /**
  * Blog page
  */
-export default function Blog() {
-	const pb = initPocketBase()
-
-	/**
-	 * Get articles, sort by created date, and limit to 3, then set to state
-	 * use pocketbase & react-query to fetch data
-	 * react-query will cache data
-	 */
-	const { isLoading, isError, data, error } = useQuery({
-		queryKey: ['articles'],
-		queryFn: async () => {
-			return pb.collection('articles').getFullList({
-				sort: '-created',
-			})
-		},
-	})
-
-	if (isLoading) return <Loader />
-
-	if (error) return 'An error has occurred: ' + error.message
-
+export default function Blog({ articles }) {
 	return (
 		<>
 			<Head>
@@ -48,8 +25,10 @@ export default function Blog() {
 					name="description"
 					content="ForMenu est l'application révolutionnaire pour votre carte de restaurant qui vous permet de créer une expérience unique pour vos clients."
 				/>
+				{/*	seo tag canonical link */}
+				<link rel="canonical" href={'https://formenu.fr/blog'} />
 			</Head>
-			<Header></Header>
+			<Header/>
 			<Container className="mt-9">
 				<div className="max-w-2xl">
 					<h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
@@ -84,7 +63,7 @@ export default function Blog() {
 							/**
 							 * map sur les articles
 							 */
-							data.map(article => (
+							articles.map(article => (
 								// fragment : permet de ne pas avoir de div en plus dans le dom & de wrap les éléments
 								<div key={article.id}>
 									<h2 className="text-sm text-slate-500">
@@ -126,3 +105,22 @@ export default function Blog() {
 		</>
 	)
 }
+
+export async function getServerSideProps() {
+	const res = await fetch(`https://api.formenu.fr/api/collections/articles/records?perPage=3&sort=created`, {
+		method: 'GET',
+		headers: {
+			// 	token
+			'Content-Type': 'application/json',
+			Accept: 'application/json',
+		},
+	})
+	const data = await res.json()
+
+	return {
+		props: {
+			articles: data.items,
+		},
+	}
+}
+

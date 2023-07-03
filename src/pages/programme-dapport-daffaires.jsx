@@ -15,6 +15,8 @@ export default function ProgrammeDapportDaffaires() {
 					name="description"
 					content="Un programme simple et efficace pour vous permettre de gagner de l'argent en faisant découvrir ForMenu"
 				/>
+				{/*	seo tag canonical link */}
+				<link rel="canonical" href={'https://formenu.fr/programme-dapport-daffaires'} />
 			</Head>
 			<Header />
 			<main>

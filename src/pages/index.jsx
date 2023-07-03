@@ -17,6 +17,8 @@ export default function Home() {
 					name="description"
 					content="ForMenu est l'application révolutionnaire pour votre carte de restaurant qui vous permet de créer une expérience unique pour vos clients."
 				/>
+				{/*	seo tag canonical link */}
+				<link rel="canonical" href={'https://formenu.fr/'} />
 			</Head>
 			<Header />
 			<main>

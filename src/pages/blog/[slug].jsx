@@ -89,7 +89,6 @@ export async function getStaticProps({ params }) {
 			},
 		}
 	).then(res => res.json())
-	console.log(articleData)
 	articleData = articleData?.items?.[0]
 
 	if (!articleData) {
@@ -101,6 +100,7 @@ export async function getStaticProps({ params }) {
 		props: {
 			articleData,
 		},
+		revalidate: 10
 	}
 }
 
