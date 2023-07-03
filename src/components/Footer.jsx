@@ -14,6 +14,7 @@ export function Footer(props) {
 						<div className="-my-1 flex flex-wrap justify-center gap-x-6">
 							<NavLink href="#features">Fonctionnalité</NavLink>
 							<NavLink href="#pricing">Prix</NavLink>
+							<NavLink href="/blog">Blog</NavLink>
 							<NavLink href="mailto:contact@formenu.fr">Contact</NavLink>
 							<NavLink href={'/programme-dapport-daffaires'}>
 								<i>Programme d&apos;apport d&apos;affaires</i>
