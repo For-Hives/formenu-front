@@ -1,28 +1,37 @@
-import logoPlanetaria from '@/images/planetaria.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import BriefcaseIcon from '@/components/blog/BriefcaseIcon'
 import ArrowRightIcon from '@/components/blog/ArrowRightIcon'
+import {Logo} from "@/components/Logo";
 
 export default function Resume() {
     let resume = [
         {
             company: 'Web : v.1',
             title: 'Mise en ligne du site web',
-            logo: logoPlanetaria,
-            start: '2023',
-            end: {
-                label: 'Present',
-                dateTime: new Date().getFullYear(),
-            },
+            logo: null,
+            start: 'janvier 2023'
+        },
+        {
+            company: 'Web : v.1.1',
+            title: 'Mise en ligne du blog',
+            logo: null,
+            start: 'juillet 2023'
+        },
+        {
+            company: 'App : v.1',
+            title: 'Développement de l\'application',
+            logo: null,
+            start: 'juillet 2023',
+            end: 'novembre 2023',
         },
         {
             company: 'App : v.1',
             title: 'Mise en ligne de l\'application',
-            logo: logoPlanetaria,
-            start: 'juillet 2023',
-            end: 'novembre 2023',
+            logo: null,
+            start: 'novembre 2023',
+            end: 'décembre 2023',
         }
     ]
 
@@ -37,7 +46,7 @@ export default function Resume() {
                     <li key={roleIndex} className="flex gap-4">
                         <div
                             className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5">
-                            <Image src={role.logo} alt="" className="h-7 w-7" unoptimized/>
+                            <Logo className={"w-6 h-6"}/>
                         </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                             <dt className="sr-only">Company</dt>
@@ -51,18 +60,24 @@ export default function Resume() {
                             <dt className="sr-only">Date</dt>
                             <dd
                                 className="ml-auto text-xs text-slate-400"
-                                aria-label={`${role.start.label ?? role.start} until ${
-                                    role.end.label ?? role.end
+                                aria-label={`${role.start.label ?? role.start} - ${
+                                    role?.end?.label ?? role?.end
                                 }`}
                             >
                                 <time dateTime={role.start.dateTime ?? role.start}>
                                     {role.start.label ?? role.start}
                                 </time>
-                                {' '}
-                                <span aria-hidden="true">—</span>{' '}
-                                <time dateTime={role.end.dateTime ?? role.end}>
-                                    {role.end.label ?? role.end}
-                                </time>
+                                {
+                                    role?.end && (
+                                        <>
+                                            {' '}
+                                            <span aria-hidden="true">—</span>{' '}
+                                            <time dateTime={role.end.dateTime ?? role.end}>
+                                                {role.end.label ?? role.end}
+                                            </time>
+                                        </>
+                                    )
+                                }
                             </dd>
                         </dl>
                     </li>
