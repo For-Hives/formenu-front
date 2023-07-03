@@ -83,13 +83,13 @@ export default function Resume() {
                     </li>
                 ))}
             </ol>
-            <Link
-                href="#"
-                className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-slate-50 px-3 py-2 text-sm font-medium text-slate-900 outline-offset-2 transition hover:bg-slate-100 active:bg-slate-100 active:text-slate-900/60 active:transition-none"
-            >
-                Voir les changelogs
-                <ArrowRightIcon className="h-4 w-4 stroke-slate-400 transition group-active:stroke-slate-600"/>
-            </Link>
+            {/*<Link*/}
+            {/*    href="#"*/}
+            {/*    className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-slate-50 px-3 py-2 text-sm font-medium text-slate-900 outline-offset-2 transition hover:bg-slate-100 active:bg-slate-100 active:text-slate-900/60 active:transition-none"*/}
+            {/*>*/}
+            {/*    Voir les changelogs*/}
+            {/*    <ArrowRightIcon className="h-4 w-4 stroke-slate-400 transition group-active:stroke-slate-600"/>*/}
+            {/*</Link>*/}
         </div>
     )
 }

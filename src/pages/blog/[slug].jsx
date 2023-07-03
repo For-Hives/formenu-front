@@ -26,6 +26,8 @@ function Slug({ articleData }) {
 					name="description"
 					content="ForMenu est l'application révolutionnaire pour votre carte de restaurant qui vous permet de créer une expérience unique pour vos clients."
 				/>
+				{/*	seo tag canonical link */}
+				<link rel="canonical" href={`https://formenu.fr/blog/${articleData.slug}`} />
 			</Head>
 			<Header></Header>
 			<Container className="mt-9">
