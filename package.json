@@ -38,7 +38,7 @@
 		"husky": "8.0.3",
 		"eslint-config-next": "13.4.4",
 		"eslint-config-prettier": "8.8.0",
-		"prettier-plugin-tailwindcss": "0.2.7",
+		"prettier-plugin-tailwindcss": "0.3.0",
 		"lint-staged": "13.2.3",
 		"prettier": "2.8.8"
 	}
