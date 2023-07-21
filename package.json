@@ -19,7 +19,7 @@
 		]
 	},
 	"dependencies": {
-		"next": "13.4.11",
+		"next": "13.4.12",
 		"@headlessui/react": "1.7.15",
 		"@tailwindcss/forms": "0.5.3",
 		"autoprefixer": "10.4.14",
@@ -36,7 +36,7 @@
 	"devDependencies": {
 		"eslint": "8.45.0",
 		"husky": "8.0.3",
-		"eslint-config-next": "13.4.11",
+		"eslint-config-next": "13.4.12",
 		"eslint-config-prettier": "8.8.0",
 		"prettier-plugin-tailwindcss": "0.3.0",
 		"lint-staged": "13.2.3",
