@@ -27,7 +27,7 @@
 		"focus-visible": "5.2.0",
 		"material-icons": "1.13.9",
 		"pocketbase": "0.15.2",
-		"postcss-focus-visible": "8.0.2",
+		"postcss-focus-visible": "9.0.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"sharp": "0.32.1",
