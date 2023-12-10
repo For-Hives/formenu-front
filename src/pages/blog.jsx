@@ -106,8 +106,7 @@ export default function Blog({ articles }) {
 }
 
 export async function getServerSideProps() {
-	// const res = await fetch(`https://formenu.fr/api/landing-blog-articles`, {
-	const res = await fetch(`http://127.0.0.1:1337/api/landing-blog-articles`, {
+	const res = await fetch(`https://formenu.fr/api/landing-blog-articles`, {
 		method: 'GET',
 		headers: {
 			// 	token
