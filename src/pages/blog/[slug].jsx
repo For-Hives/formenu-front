@@ -8,7 +8,6 @@ import {Footer} from '@/components/Footer'
 import {Layout} from "@/components/Layout";
 
 function Slug({data}) {
-    console.log(data)
     let articleData = data
     return (
         <>
@@ -34,9 +33,6 @@ function Slug({data}) {
                     </h1>
                     <div className={'flex flex-col'}>
                         <div className={'prose my-8 xl:prose-lg'}>
-                            {
-                                console.log(articleData?.attributes.content)
-                            }
                             <Layout value={articleData.attributes.content}/>
                         </div>
                     </div>
