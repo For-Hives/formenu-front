@@ -49,3 +49,14 @@ body {
 		-webkit-box-shadow: 0 0 1px hsl(0deg 0% 100% / 50%);
 	}
 }
+
+article img {
+	/*    rounded */
+	border-radius: 0.4rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.layout-custom *{
+	list-style: inside;
+}

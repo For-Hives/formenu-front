@@ -3,8 +3,9 @@ import Head from 'next/head'
 
 import {Container} from '@/components/Container'
 import {Header} from '@/components/Header'
-import {convertToStringDate} from '@/utils/utils'
+import {convertToStringDate, processMarkdown, updateNestedProperty} from '@/utils/utils'
 import {Footer} from '@/components/Footer'
+import {Layout} from "@/components/Layout";
 
 function Slug({data}) {
     let articleData = data
@@ -31,10 +32,18 @@ function Slug({data}) {
                     <h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
                         {articleData?.attributes.title}
                     </h1>
-                    <div
-                        className=" mt-6 text-base text-slate-600"
-                        dangerouslySetInnerHTML={{__html: articleData?.attributes.content}}
-                    ></div>
+                    <div className={'flex flex-col'}>
+                        <div className={'prose my-8 xl:prose-lg'}>
+                            {/*{*/}
+                            {/*    console.log(articleData?.attributes.content)*/}
+                            {/*}*/}
+                            <Layout value={articleData?.attributes.content.toString()}/>
+                        </div>
+                    </div>
+                    {/*<div*/}
+                    {/*    className=" mt-6 text-base text-slate-600"*/}
+                    {/*    dangerouslySetInnerHTML={{__html: articleData?.attributes.content}}*/}
+                    {/*></div>*/}
                     <Footer alternativemode={true}/>
                 </div>
             </Container>
@@ -75,6 +84,18 @@ export async function getStaticProps({params}) {
     })
     let data = await res.json()
     data = data?.data[0]
+
+    const processedContent = await processMarkdown(
+        data.attributes.content
+    )
+
+    data = updateNestedProperty(
+        data,
+        'data.attributes.content',
+        processedContent
+    )
+
+    console.log(data)
 
     if (!data) {
         return {
