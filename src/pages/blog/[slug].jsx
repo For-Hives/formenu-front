@@ -37,7 +37,7 @@ function Slug({data}) {
                             {/*{*/}
                             {/*    console.log(articleData?.attributes.content)*/}
                             {/*}*/}
-                            <Layout value={articleData?.attributes.content.toString()}/>
+                            <Layout value={articleData?.attributes.content}/>
                         </div>
                     </div>
                     {/*<div*/}
