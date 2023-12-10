@@ -41,24 +41,20 @@ function Slug({articleData}) {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch(`https://formenu.fr/api/landing-blog-articles`, {
-            method: 'GET',
-            headers: {
-                // 	token
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
-            },
-        }
-    ).then(res => res.json())
+    const res = await fetch(`https://formenu.fr/api/api/landing-blog-articles`, {
+        method: 'GET',
+        headers: {
+            // 	token
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+        },
+    })
+    const data = await res.json()
 
-    /**
-     * format the data for getStaticPaths
-     * @type {{params: {id: *}}[]}
-     */
-
-    const paths = res?.items?.map(record => ({
+    console.log(data)
+    const paths = data.data?.map(record => ({
         params: {
-            slug: record.slug,
+            slug: record.attributes.slug,
         },
     }))
     return {
@@ -69,7 +65,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     let articleData = await fetch(
-        `https://formenu.fr/api/landing-blog-articles?filters[slug][$eq]='${params.slug}'`,
+        `https://formenu.fr/api/api/landing-blog-articles?filters[slug][$eq]='${params.slug}'`,
 
         {
             method: 'GET',
