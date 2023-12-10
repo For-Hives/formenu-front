@@ -62,25 +62,25 @@ export default function Blog({ articles }) {
 							/**
 							 * map sur les articles
 							 */
-							articles.map(article => (
+							articles?.map(article => (
 								// fragment : permet de ne pas avoir de div en plus dans le dom & de wrap les éléments
 								<div key={article.id}>
 									<h2 className="text-sm text-slate-500">
-										{convertToStringDate(article.date)}
+										{convertToStringDate(article.attributes.date)}
 									</h2>
 									<h3 className="text-sm text-slate-500">
-										{article.title}
+										{article.attributes.title}
 									</h3>
 									<div
 										dangerouslySetInnerHTML={{
-											__html: article.excerpt,
+											__html: article.attributes.excerpt,
 										}}
 									/>
 									<Link
 										className={
 											'flex items-center text-sm font-medium text-indigo-900'
 										}
-										href={`/blog/${article.slug}`}
+										href={`/blog/${article.attributes.slug}`}
 									>
 										{"Lire l'article"}
 										<span className="material-icons-round mt-1 text-base text-indigo-900">
@@ -106,7 +106,8 @@ export default function Blog({ articles }) {
 }
 
 export async function getServerSideProps() {
-	const res = await fetch(`https://api.formenu.fr/api/collections/articles/records?perPage=3&sort=created`, {
+	// const res = await fetch(`https://formenu.fr/api/landing-blog-articles`, {
+	const res = await fetch(`http://127.0.0.1:1337/api/landing-blog-articles`, {
 		method: 'GET',
 		headers: {
 			// 	token
@@ -118,7 +119,7 @@ export async function getServerSideProps() {
 
 	return {
 		props: {
-			articles: data.items,
+			articles: data.data,
 		},
 	}
 }
