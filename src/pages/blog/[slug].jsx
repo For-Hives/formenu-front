@@ -8,8 +8,8 @@ import {Footer} from '@/components/Footer'
 import {Layout} from "@/components/Layout";
 
 function Slug({data}) {
-    let articleData = data
     console.log(data)
+    let articleData = data
     return (
         <>
             <Head>
@@ -34,10 +34,10 @@ function Slug({data}) {
                     </h1>
                     <div className={'flex flex-col'}>
                         <div className={'prose my-8 xl:prose-lg'}>
-                            {/*{*/}
-                            {/*    console.log(articleData?.attributes.content)*/}
-                            {/*}*/}
-                            <Layout value={articleData?.attributes.content}/>
+                            {
+                                console.log(articleData?.attributes.content)
+                            }
+                            <Layout value={articleData.attributes.content}/>
                         </div>
                     </div>
                     {/*<div*/}
@@ -91,11 +91,9 @@ export async function getStaticProps({params}) {
 
     data = updateNestedProperty(
         data,
-        'data.attributes.content',
+        'attributes.content',
         processedContent
     )
-
-    console.log(data)
 
     if (!data) {
         return {
