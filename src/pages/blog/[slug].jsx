@@ -6,7 +6,9 @@ import {Header} from '@/components/Header'
 import {convertToStringDate} from '@/utils/utils'
 import {Footer} from '@/components/Footer'
 
-function Slug({articleData}) {
+function Slug({data}) {
+    let articleData = data
+    console.log(data)
     return (
         <>
             <Head>
@@ -18,20 +20,20 @@ function Slug({articleData}) {
                     content="ForMenu est l'application révolutionnaire pour votre carte de restaurant qui vous permet de créer une expérience unique pour vos clients."
                 />
                 {/*	seo tag canonical link */}
-                <link rel="canonical" href={`https://formenu.fr/blog/${articleData.slug}`}/>
+                <link rel="canonical" href={`https://formenu.fr/blog/${articleData?.attributes.slug}`}/>
             </Head>
             <Header></Header>
             <Container className="mt-9">
                 <div className="mx-auto max-w-2xl">
                     <div className="text-sm text-slate-500">
-                        {convertToStringDate(articleData.date)}
+                        {convertToStringDate(articleData?.attributes.date)}
                     </div>
                     <h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
-                        {articleData.title}
+                        {articleData?.attributes.title}
                     </h1>
                     <div
                         className=" mt-6 text-base text-slate-600"
-                        dangerouslySetInnerHTML={{__html: articleData.content}}
+                        dangerouslySetInnerHTML={{__html: articleData?.attributes.content}}
                     ></div>
                     <Footer alternativemode={true}/>
                 </div>
@@ -51,7 +53,6 @@ export async function getStaticPaths() {
     })
     const data = await res.json()
 
-    console.log(data)
     const paths = data.data?.map(record => ({
         params: {
             slug: record.attributes.slug,
@@ -64,28 +65,25 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-    let articleData = await fetch(
-        `https://formenu.fr/api/api/landing-blog-articles?filters[slug][$eq]='${params.slug}'`,
+    const res = await fetch(`https://formenu.fr/api/api/landing-blog-articles?filters[slug][$eq]=${params.slug}`, {
+        method: 'GET',
+        headers: {
+            // 	token
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+        },
+    })
+    let data = await res.json()
+    data = data?.data[0]
 
-        {
-            method: 'GET',
-            headers: {
-                // 	token
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
-            },
-        }
-    ).then(res => res.json())
-    articleData = articleData?.data?.[0]
-
-    if (!articleData) {
+    if (!data) {
         return {
             props: {hasError: true},
         }
     }
     return {
         props: {
-            articleData,
+            data,
         },
         revalidate: 10
     }
