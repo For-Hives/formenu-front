@@ -21,6 +21,12 @@ export default function Document(props) {
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@400;500&display=swap"
 				/>
+				<Script
+					async
+					src="https://umami.wadefade.fr/script.js"
+					strategy={'afterInteractive'}
+					data-website-id="911083ce-df29-4499-a611-e43c70defd8b"
+				></Script>
 			</Head>
 			<body className="flex flex-col">
 				<Main />
