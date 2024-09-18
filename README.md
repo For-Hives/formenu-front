@@ -1,5 +1,3 @@
-Here's a README for the Formenu project based on the information you've provided:
-
 # Formenu - Next-Gen Digital Menu for Restaurants
 
 ![Formenu Preview](https://r2-andycinquin.andy-cinquin.fr/pres_formenu_1bd9a8adfe.webp)
