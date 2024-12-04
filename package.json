@@ -36,7 +36,7 @@
     "remark": "15.0.1",
     "remark-html": "16.0.1",
     "domhandler": "5.0.3",
-    "html-react-parser": "5.1.18",
+    "html-react-parser": "5.1.19",
     "remark-parse": "11.0.0"
   },
   "devDependencies": {
