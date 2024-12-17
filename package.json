@@ -19,7 +19,7 @@
     ]
   },
   "dependencies": {
-    "next": "15.1.0",
+    "next": "15.1.1",
     "@headlessui/react": "2.2.0",
     "@tailwindcss/forms": "0.5.9",
     "@tailwindcss/typography": "0.5.15",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "eslint": "9.17.0",
     "husky": "9.1.7",
-    "eslint-config-next": "15.1.0",
+    "eslint-config-next": "15.1.1",
     "eslint-config-prettier": "9.1.0",
     "prettier-plugin-tailwindcss": "0.6.9",
     "lint-staged": "15.2.11",
