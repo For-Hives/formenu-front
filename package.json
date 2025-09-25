@@ -45,7 +45,7 @@
     "eslint-config-next": "15.5.4",
     "eslint-config-prettier": "10.1.8",
     "prettier-plugin-tailwindcss": "0.6.11",
-    "lint-staged": "16.2.0",
+    "lint-staged": "16.2.1",
     "prettier": "3.6.2"
   }
 }
