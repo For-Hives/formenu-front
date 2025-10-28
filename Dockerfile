@@ -1,4 +1,4 @@
-FROM node:22-bullseye as builder
+FROM node:24-bullseye as builder
 
 WORKDIR /usr/app
 COPY ./ ./
