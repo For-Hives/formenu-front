@@ -27,7 +27,7 @@
     "clsx": "2.1.1",
     "focus-visible": "5.2.1",
     "material-icons": "1.13.14",
-    "pocketbase": "0.26.0",
+    "pocketbase": "0.26.5",
     "postcss-focus-visible": "10.0.1",
     "react": "19.2.1",
     "react-dom": "19.2.1",
