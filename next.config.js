@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: 'standalone',
 	reactStrictMode: true,
 	images: {
 		remotePatterns: [
@@ -11,7 +12,6 @@ const nextConfig = {
 	},
 	experimental: {
 		scrollRestoration: true,
-		isrMemoryCacheSize: 0,
 	},
 }
 

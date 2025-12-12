@@ -47,5 +47,8 @@
     "prettier-plugin-tailwindcss": "0.5.14",
     "lint-staged": "15.2.10",
     "prettier": "3.3.3"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
