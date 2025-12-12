@@ -44,7 +44,7 @@
     "husky": "9.1.6",
     "eslint-config-next": "14.2.12",
     "eslint-config-prettier": "9.1.0",
-    "prettier-plugin-tailwindcss": "0.5.14",
+    "prettier-plugin-tailwindcss": "0.7.2",
     "lint-staged": "15.2.10",
     "prettier": "3.3.3"
   },
