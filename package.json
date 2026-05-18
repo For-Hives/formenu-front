@@ -19,34 +19,36 @@
     ]
   },
   "dependencies": {
-    "next": "14.2.13",
-    "@headlessui/react": "2.1.5",
-    "@tailwindcss/forms": "0.5.7",
-    "@tailwindcss/typography": "0.5.12",
-    "autoprefixer": "10.4.20",
+    "@headlessui/react": "2.2.10",
+    "@tailwindcss/forms": "0.5.11",
+    "@tailwindcss/typography": "0.5.19",
+    "autoprefixer": "10.5.0",
     "clsx": "2.1.1",
+    "domhandler": "5.0.3",
     "focus-visible": "5.2.1",
-    "material-icons": "1.13.12",
-    "pocketbase": "0.21.2",
+    "html-react-parser": "5.1.16",
+    "material-icons": "1.13.14",
+    "next": "14.2.35",
+    "node-addon-api": "^8.7.0",
+    "node-gyp": "^12.3.0",
+    "pocketbase": "0.26.9",
     "postcss-focus-visible": "9.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sharp": "0.33.4",
-    "tailwindcss": "3.4.12",
     "remark": "15.0.1",
     "remark-html": "16.0.1",
-    "domhandler": "5.0.3",
-    "html-react-parser": "5.1.16",
-    "remark-parse": "11.0.0"
+    "remark-parse": "11.0.0",
+    "sharp": "0.34.5",
+    "tailwindcss": "3.4.12"
   },
   "devDependencies": {
     "eslint": "8.57.1",
-    "husky": "9.1.6",
     "eslint-config-next": "14.2.12",
     "eslint-config-prettier": "9.1.0",
-    "prettier-plugin-tailwindcss": "0.5.14",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
-    "prettier": "3.3.3"
+    "prettier": "3.8.3",
+    "prettier-plugin-tailwindcss": "0.8.0"
   },
   "engines": {
     "node": "20.x"
