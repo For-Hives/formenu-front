@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "eslint": "10.6.0",
-    "eslint-config-next": "14.2.12",
+    "eslint-config-next": "14.2.35",
     "eslint-config-prettier": "9.1.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.2",
