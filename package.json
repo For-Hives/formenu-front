@@ -30,7 +30,7 @@
     "material-icons": "1.13.14",
     "next": "16.2.9",
     "node-addon-api": "^8.7.0",
-    "node-gyp": "^12.3.0",
+    "node-gyp": "^13.0.0",
     "pocketbase": "0.27.0",
     "postcss-focus-visible": "9.0.1",
     "react": "18.3.1",
