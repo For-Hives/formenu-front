@@ -83,3 +83,7 @@ Formenu is a revolutionary digital menu solution designed to enhance the dining 
 For more information about Formenu or to discuss potential collaborations, please contact:
 
 [contact@andy-cinquin.fr]
+
+## License
+
+MIT, see [LICENSE](LICENSE). Any component derived from Tailwind UI stays under the Tailwind UI license, not MIT.
