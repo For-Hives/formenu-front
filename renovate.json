@@ -1,13 +1,16 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base"],
+	"extends": ["config:recommended"],
+	"description": "Application remplacée par la v2 (For-Hives/formenu#344) : Renovate ne propose plus que les correctifs de sécurité.",
 	"packageRules": [
 		{
-			"matchUpdateTypes": ["minor", "patch"],
-			"matchCurrentVersion": "!/^0/",
-			"automerge": false,
-			"automergeType": "pr",
-			"automergeStrategy": "squash"
+			"description": "Plus de mises à jour de confort ni de majeures : l'application sera remplacée par la v2 (For-Hives/formenu#344).",
+			"matchPackageNames": ["*"],
+			"enabled": false
 		}
-	]
+	],
+	"vulnerabilityAlerts": {
+		"enabled": true
+	},
+	"osvVulnerabilityAlerts": true
 }
