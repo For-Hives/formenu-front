@@ -28,7 +28,7 @@
     "focus-visible": "5.2.1",
     "html-react-parser": "5.2.17",
     "material-icons": "1.13.14",
-    "next": "16.2.9",
+    "next": "16.4.1",
     "node-addon-api": "^8.7.0",
     "node-gyp": "^12.3.0",
     "pocketbase": "0.27.0",
